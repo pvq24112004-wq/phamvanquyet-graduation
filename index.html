@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071a33">
+  <meta name="description" content="Thiệp mời lễ tốt nghiệp của Phạm Văn Quyết - lớp 22DTT2, Trường Đại học Văn hóa TP. Hồ Chí Minh.">
+  <title>Thiệp mời tốt nghiệp | Phạm Văn Quyết</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div id="loadingScreen" class="loading-screen" aria-hidden="true">
+    <img src="assets/images/logo-truong.webp" alt="Logo trường">
+    <span class="loading-line"></span>
+    <p>Đang chuẩn bị thiệp mời...</p>
+  </div>
+
+  <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <header class="hero" id="top">
+    <img class="hero-bg" src="assets/images/TRUONG.jpg" alt="Trường Đại học Văn hóa TP. Hồ Chí Minh">
+    <div class="hero-overlay"></div>
+    <div class="floating-particles" aria-hidden="true"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-copy reveal">
+        <img class="hero-logo" src="assets/images/logo-truong.webp" alt="Logo Trường Đại học Văn hóa TP. Hồ Chí Minh">
+        <p class="eyebrow">Graduation Invitation · 2026</p>
+        <h1>Phạm Văn Quyết</h1>
+        <p class="class-name">22DTT2</p>
+        <p class="major">Truyền thông Văn hóa</p>
+        <p class="school">Trường Đại học Văn hóa TP. Hồ Chí Minh</p>
+        <div class="hero-meta">
+          <span>Thứ Bảy, 08.08.2026</span>
+          <span>09:30 sáng</span>
+        </div>
+        <button class="primary-btn" id="openInvitation" type="button">Mở thiệp</button>
+      </div>
+
+      <div class="hero-portrait-wrap reveal">
+        <div class="portrait-glow"></div>
+        <img class="hero-portrait" src="assets/images/Pham-Van-Quyet-22DTT2.JPG" alt="Phạm Văn Quyết trong trang phục tốt nghiệp">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section message-section" id="message">
+      <div class="container narrow reveal">
+        <p class="section-kicker">Lời mời</p>
+        <h2>Một cột mốc đáng nhớ</h2>
+        <div class="message-card">
+          <p>Vậy là mình đã hoàn thành chặng đường 4 năm tại giảng đường. Thời gian qua tuy không dài nhưng cũng không ngắn, đủ để bản thân mình trưởng thành và hoàn thiện hơn.</p>
+          <p>Trong quãng thời gian đó, không thể thiếu sự đồng hành của gia đình cũng như những người bạn trân quý. Tất cả đã tạo cho mình một quãng đời sinh viên thật đẹp.</p>
+          <p>Chân thành cảm ơn mọi người vì đã luôn ở bên cạnh mình trong suốt hành trình ấy.</p>
+          <p>Ngày tốt nghiệp sắp tới, rất mong được gặp mọi người để cùng chia sẻ niềm vui trong cột mốc đặc biệt này.</p>
+          <p class="signature">— Phạm Văn Quyết</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="container reveal">
+        <p class="section-kicker">Đếm ngược</p>
+        <h2>Hẹn gặp mọi người tại buổi lễ</h2>
+        <div class="countdown-grid" aria-label="Đếm ngược đến lễ tốt nghiệp">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+        <p id="countdownMessage" class="countdown-message"></p>
+      </div>
+    </section>
+
+    <section class="section event-section">
+      <div class="container two-column">
+        <article class="event-card reveal">
+          <p class="section-kicker">Event Information</p>
+          <h2>Thông tin buổi lễ</h2>
+          <dl class="event-list">
+            <div><dt>Thời gian</dt><dd>Thứ Bảy, ngày 08/08/2026<br>09:30 sáng</dd></div>
+            <div><dt>Địa điểm</dt><dd>Trường Đại học Văn hóa TP. Hồ Chí Minh – Cơ sở 1<br>51 Quốc Hương, phường An Khánh, TP.HCM</dd></div>
+            <div><dt>Liên hệ</dt><dd><a href="tel:0967102684">0967 102 684</a></dd></div>
+          </dl>
+          <div class="button-row">
+            <a class="primary-btn" href="https://maps.app.goo.gl/Lz5Hf9SBdwjTcXMJ9" target="_blank" rel="noopener">Chỉ đường</a>
+            <a class="secondary-btn" href="tel:0967102684">Gọi ngay</a>
+          </div>
+        </article>
+
+        <figure class="photo-card reveal">
+          <button id="openLightbox" type="button" aria-label="Phóng to ảnh">
+            <img src="assets/images/Pham-Van-Quyet-22DTT2.JPG" alt="Phạm Văn Quyết - 22DTT2" loading="lazy">
+          </button>
+          <figcaption>Phạm Văn Quyết · 22DTT2</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="container narrow reveal">
+        <p class="section-kicker">RSVP</p>
+        <h2>Xác nhận tham dự</h2>
+        <form id="rsvpForm" class="rsvp-form" novalidate>
+          <div class="field">
+            <label for="guestName">Họ và tên</label>
+            <input id="guestName" name="name" type="text" autocomplete="name" placeholder="Nhập họ và tên" maxlength="80" required>
+            <small id="nameError" class="field-error"></small>
+          </div>
+
+          <fieldset class="field attendance-field">
+            <legend>Hôm đó mình có được gặp bạn không?</legend>
+            <label class="choice"><input type="radio" name="attendance" value="Chắc chắn là có rồi"><span>Chắc chắn là có rồi</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="Tiếc quá, mình bận không đến được"><span>Tiếc quá, mình bận không đến được</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="Chưa chắc, mình sẽ báo lại sau"><span>Chưa chắc, mình sẽ báo lại sau</span></label>
+            <small id="attendanceError" class="field-error"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="guestMessage">Đôi lời muốn nói</label>
+            <textarea id="guestMessage" name="message" rows="5" maxlength="300" placeholder="Viết lời nhắn của bạn..."></textarea>
+            <div class="character-count"><span id="messageCount">0</span>/300</div>
+          </div>
+
+          <div class="honeypot" aria-hidden="true">
+            <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <button id="submitRsvp" class="primary-btn submit-btn" type="submit">Gửi xác nhận</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/images/logo-truong.webp" alt="Logo trường">
+    <strong>Phạm Văn Quyết · 22DTT2</strong>
+    <span>Graduation Ceremony 2026</span>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Về đầu trang">↑</button>
+
+  <div id="musicPlayer" class="music-player" aria-label="Trình phát nhạc">
+    <button id="musicToggle" type="button" aria-label="Phát hoặc tạm dừng nhạc">▶</button>
+    <div><strong>Fairy Tail</strong><span>Nhạc nền</span></div>
+    <button id="muteToggle" type="button" aria-label="Bật hoặc tắt tiếng">🔊</button>
+  </div>
+  <audio id="bgMusic" loop preload="metadata">
+    <source src="assets/audio/fairytail.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="closeLightbox" type="button" aria-label="Đóng ảnh">×</button>
+    <img src="assets/images/Pham-Van-Quyet-22DTT2.JPG" alt="Phạm Văn Quyết - 22DTT2">
+  </div>
+
+  <script src="assets/js/app.js?v=1" defer></script>
+</body>
+</html>
